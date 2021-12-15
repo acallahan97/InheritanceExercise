@@ -34,6 +34,42 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Bird blueJay = new Bird()
+            {
+                AnimalSound = "flap flap",
+                BirdNoise = "tweet tweet",
+                BirdSize = "small",
+                CanFly = true,
+                CanSwim = false,
+                HasWings = true,
+                LikesToEat = "worms",
+                LivesUnderwater = false
+            };
+            Console.WriteLine($"Blue Jay Sound: {blueJay.AnimalSound}" +
+                $" Noise: {blueJay.BirdNoise} Size: {blueJay.BirdSize}" +
+                $" Flies: {blueJay.CanFly} Can Swim: {blueJay.CanSwim}" +
+                $" Has Wings: {blueJay.HasWings}" +
+                $" Favorite Food: {blueJay.LikesToEat}" +
+                $" Lives Underwater: {blueJay.LivesUnderwater}");
+
+
+            Reptile turtle = new Reptile()
+            {
+                AnimalSound = "scoot scoot",
+                EatsFlies = false,
+                HasAShell = true,
+                ReptileNoise = "hiss",
+                HasLegs = true,
+                HasWings = false,
+                LikesToEat = "leaves",
+                LivesUnderwater = false
+            };
+            Console.WriteLine($"Turtle Sound: {turtle.AnimalSound}" +
+                $" Eats flies: {turtle.EatsFlies} Has a shell: {turtle.HasAShell}" +
+                $" Turtle Noise: {turtle.ReptileNoise} Has legs: {turtle.HasLegs}" +
+                $" Has Wings: {turtle.HasWings}" +
+                $" Favorite Food: {turtle.LikesToEat}" +
+                $" Lives Underwater: {turtle.LivesUnderwater}");
         }
     }
 }
